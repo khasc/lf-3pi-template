@@ -38,7 +38,7 @@ pkgs.mkShell {
     export PICO_BOARD_HEADER_DIRS="$PWD/robot-lib"
     echo "[shell] PICO_BOARD: $PICO_BOARD" | lolcat
     echo "[shell] PICO_PLATFORM: $PICO_PLATFORM" | lolcat
-    echo "[shell] PICO_BOARD_HEADER_DIRS: $PICO_BOARD_HEADER_DIRS"
+    echo "[shell] PICO_BOARD_HEADER_DIRS: $PICO_BOARD_HEADER_DIRS" | lolcat
     echo "[shell] setup testbed"
     cd test/
     npm install
