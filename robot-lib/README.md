@@ -8,7 +8,7 @@ repository.  To use these library routines in your Lingua Franca program, it is 
 ```
 target C {
   platform: "RP2040", 
-  threading: false,
+  single-threaded: true,
   files: ["../../robot-lib/"],                      // Needed to find imu.h
   cmake-include: ["../../robot-lib/robot-lib.txt"]  // Needed to find imu.h
 }
